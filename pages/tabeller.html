@@ -1,0 +1,92 @@
+<div class="content-container">
+    <h1>Tabeller</h1>
+    <p>Below are examples of tables used in the interface. One is suitable for long lists, and the other for tables with many columns.</p>
+
+    <h2>Long List Table</h2>
+    <p>This table style is meant for displaying a long list of items clearly.</p>
+    <table class="table-long">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Category</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Item One</td>
+                <td>Category A</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Item Two</td>
+                <td>Category B</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Item Three</td>
+                <td>Category A</td>
+            </tr>
+        </tbody>
+    </table>
+    <pre><code>
+&lt;table class="table-long"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;&lt;th>#&lt;/th&gt;&lt;th>Name&lt;/th&gt;&lt;th>Category&lt;/th&gt;&lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;&lt;td>1&lt;/td&gt;&lt;td>Item One&lt;/td&gt;&lt;td>Category A&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td>2&lt;/td&gt;&lt;td>Item Two&lt;/td&gt;&lt;td>Category B&lt;/td&gt;&lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+    </code></pre>
+    <p>&lt;thead&gt; stands for 'table header' i.e. it groups the uppermost row of the table that contains header cells.</p>
+    <p>&lt;tr&gt; stands for 'table row'.</p>
+    <p>&lt;th&gt; stands for 'table head'; but unlike &lt;thead&gt;, represents a single cell.</p>
+    <p>&lt;td&gt; stands for 'table data' and contains the informational content of a cell. </p>
+    <p>&lt;tbody&gt; groups the body content in a table.</p>
+    <h2>Wide Table (Many Columns)</h2>
+    <p>This table style is suitable for displaying data with multiple columns.</p>
+    <table class="table-wide">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Status</th>
+                <th>Date</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Item One</td>
+                <td>A</td>
+                <td>Active</td>
+                <td>2025-11-19</td>
+                <td>First entry</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Item Two</td>
+                <td>B</td>
+                <td>Inactive</td>
+                <td>2025-11-18</td>
+                <td>Second entry</td>
+            </tr>
+        </tbody>
+    </table>
+    <pre><code>
+&lt;table class="table-wide"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;&lt;th>ID&lt;/th&gt;&lt;th>Name&lt;/th&gt;&lt;th>Category&lt;/th&gt;&lt;th>Status&lt;/th&gt;&lt;th>Date&lt;/th&gt;&lt;th>Notes&lt;/th&gt;&lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;&lt;td>001&lt;/td&gt;&lt;td>Item One&lt;/td&gt;&lt;td>A&lt;/td&gt;&lt;td>Active&lt;/td&gt;&lt;td>2025-11-19&lt;/td&gt;&lt;td>First entry&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td>002&lt;/td&gt;&lt;td>Item Two&lt;/td&gt;&lt;td>B&lt;/td&gt;&lt;td>Inactive&lt;/td&gt;&lt;td>2025-11-18&lt;/td&gt;&lt;td>Second entry&lt;/td&gt;&lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+    </code></pre>
+</div>
