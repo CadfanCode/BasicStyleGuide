@@ -31,13 +31,8 @@ pre code {
     overflow-x: auto;
 }
 
-/* Layout */
-.container {
-    display: flex;
-    min-height: 100vh;
-}
-
-nav {
+/* Navigation */
+nav-one {
     width: 250px;
     background-color: #003366;
     color: white;
@@ -49,7 +44,7 @@ nav {
     bottom: 0;
 }
 
-nav a {
+nav-one a {
     display: block;
     color: #ffffff;
     text-decoration: none;
@@ -57,7 +52,7 @@ nav a {
     font-size: 16px;
 }
 
-nav a:hover {
+nav-one a:hover {
     background-color: #0066cc;
     padding-left: 10px;
 }
@@ -67,16 +62,6 @@ nav a:hover {
     padding: 20px;
     background-color: #ffffff;
     flex-grow: 1;
-}
-
-footer {
-    background-color: #003366;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }
 
 /* Loading Indicators */
