@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,6 +7,31 @@ body {
     color: #003366;
 }
 
+h1, h2, h3 {
+    color: #003366;
+}
+
+ul {
+    margin-top: 20px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+pre code {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: Consolas, monospace;
+    color: #003366;
+    display: block;
+    overflow-x: auto;
+}
+
+/* Layout */
 .container {
     display: flex;
     min-height: 100vh;
@@ -43,19 +69,6 @@ nav a:hover {
     flex-grow: 1;
 }
 
-h1, h2, h3 {
-    color: #003366;
-}
-
-.content a {
-    color: #0066cc;
-    text-decoration: none;
-}
-
-.content a:hover {
-    color: #003366;
-}
-
 footer {
     background-color: #003366;
     color: white;
@@ -66,43 +79,7 @@ footer {
     width: 100%;
 }
 
-
-/* CONTENT CONTAINER */
-.content-container {
-    padding: 20px;
-    background-color: #ffffff;
-    color: #003366;
-}
-
-h1, h2 {
-    color: #003366;
-}
-
-p, ul {
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-ul {
-    margin-top: 20px;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-/* Code Block */
-pre code {
-    background-color: #f8f8f8;
-    padding: 10px;
-    border-radius: 4px;
-    font-family: Consolas, monospace;
-    color: #003366;
-    display: block;
-    overflow-x: auto;
-}
-
-/* Spinner Loading Indicator */
+/* Loading Indicators */
 .loading-spinner {
     width: 50px;
     height: 50px;
@@ -118,7 +95,6 @@ pre code {
     100% { transform: rotate(360deg); }
 }
 
-/* Progress Bar Container */
 .loading-progress-container {
     width: 100%;
     background-color: #f3f3f3;
@@ -128,7 +104,7 @@ pre code {
 }
 
 .loading-progress {
-    width: 0%; /* Start with 0% progress */
+    width: 0%;
     height: 20px;
     background-color: #0066cc;
     animation: progress 3s ease-in-out forwards;
@@ -139,19 +115,14 @@ pre code {
     100% { width: 100%; }
 }
 
-/* Mobile-Friendly Adjustments */
-@media (max-width: 768px) {
-    .content-container {
-        padding: 15px;
-    }
-
-    pre code {
-        font-size: 14px;
-        padding: 8px;
-    }
+/* Content Container */
+.content-container {
+    padding: 20px;
+    background-color: #ffffff;
+    color: #003366;
 }
 
-
+/* Mobile-Friendly Adjustments */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -160,7 +131,6 @@ pre code {
     nav {
         position: relative;
         width: 100%;
-        height: auto;
         padding: 15px;
     }
 
@@ -171,5 +141,14 @@ pre code {
     .content {
         margin-left: 0;
         padding: 15px;
+    }
+
+    .content-container {
+        padding: 15px;
+    }
+
+    pre code {
+        font-size: 14px;
+        padding: 8px;
     }
 }
