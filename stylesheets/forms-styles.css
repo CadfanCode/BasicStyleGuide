@@ -2,42 +2,64 @@
 
 /* Ensure the content container has padding and spacing */
 .content-container {
-    padding: 20px;
+    padding: 30px;
     background-color: #ffffff;
     color: #003366;
-    margin-left: 270px; 
+    margin-left: 270px; /* Push content to the right to leave room for the sidebar */
     min-height: 100vh;
+    box-sizing: border-box;
 }
 
-/* Basic heading and paragraph styling */
-h1, h2 {
+/* Headings */
+h1 {
     color: #003366;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 h2 {
+    color: #003366;
+    font-size: 1.75rem;
     margin-top: 20px;
-    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 5px;
 }
 
-/* Form element styling */
+/* Paragraph Styling */
+p {
+    line-height: 1.6;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #333333;
+}
+
+/* Form Elements Styling */
 form {
     margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Input fields and textareas */
+/* Input Fields and Textareas */
 input[type="text"], textarea, select {
     width: 100%;
     padding: 12px;
-    margin-top: 8px;
+    margin-top: 10px;
     border: 2px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
     color: #003366;
     background-color: #f9f9f9;
     transition: border-color 0.3s ease;
+    margin-bottom: 20px;
 }
 
-/* Focus effect for form elements */
+/* Input fields on focus */
 input[type="text"]:focus, textarea:focus, select:focus {
     border-color: #0066cc;
     outline: none;
@@ -45,7 +67,7 @@ input[type="text"]:focus, textarea:focus, select:focus {
 
 /* Textarea specific adjustments */
 textarea {
-    resize: vertical; 
+    resize: vertical; /* Allow vertical resizing */
 }
 
 /* Labels for form elements */
@@ -62,7 +84,34 @@ input[type="radio"], input[type="checkbox"] {
     margin-right: 10px;
 }
 
-/* Add some margin to code blocks */
+/* Button Styling */
+button {
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #005bb5;
+    transform: translateY(-2px);
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Form section spacing */
+.form-section {
+    margin-bottom: 30px;
+}
+
+/* Code Styling */
 pre code {
     font-size: 14px;
     padding: 12px;
@@ -71,19 +120,15 @@ pre code {
     color: #333333;
     overflow-x: auto;
     margin-top: 20px;
+    border: 1px solid #ddd;
 }
 
-/* Form section spacing */
+/* Add spacing between form sections */
 form h2 {
     margin-top: 20px;
 }
 
-/* Example for specific spacing or adjustments */
-.form-section {
-    margin-bottom: 30px;
-}
-
-/* Responsive for mobile devices */
+/* Mobile-Friendly Adjustments */
 @media (max-width: 768px) {
     .content-container {
         padding: 15px;
@@ -91,14 +136,18 @@ form h2 {
     }
 
     h1 {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     h2 {
-        font-size: 1.125rem;
+        font-size: 1.25rem;
     }
 
     input[type="text"], textarea, select {
         padding: 10px;
+    }
+
+    button {
+        width: 100%;
     }
 }
