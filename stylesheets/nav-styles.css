@@ -1,22 +1,19 @@
-nav {
-    margin-top: 20px;
+/* Navigation Page Styles */
+
+/* General Content Adjustments */
+.content-container {
+    padding: 20px;
+    background-color: #ffffff;
+    color: #003366;
 }
 
-nav a {
-    text-decoration: none;
-    color: #ffffff;
-    padding: 12px 15px;
-    display: block;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-/* Horizontal Navigation Bar */
+/* Simple Navigation Bar Styles */
 .nav-bar {
     background-color: #003366;
     text-align: center;
     padding: 10px 0;
     border-radius: 6px;
+    margin-bottom: 30px;  /* Space below the navigation bar */
 }
 
 .nav-bar ul {
@@ -31,15 +28,22 @@ nav a {
 }
 
 .nav-bar a {
-    transition: background-color 0.3s ease;
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
 }
 
 .nav-bar a:hover {
     background-color: #0066cc;
-    border-radius: 4px;
+    padding-left: 15px;  /* Add padding on hover for better effect */
 }
 
-/* Sidebar Navigation */
+/* Sidebar Navigation Styles */
 .nav-sidebar {
     width: 250px;
     background-color: #003366;
@@ -51,6 +55,7 @@ nav a {
     box-sizing: border-box;
     z-index: 1000;
     overflow-y: auto;
+    border-radius: 6px;
 }
 
 .nav-sidebar ul {
@@ -64,22 +69,19 @@ nav a {
 }
 
 .nav-sidebar a {
+    display: block;
     padding: 12px 20px;
+    color: white;
+    text-decoration: none;
     font-size: 16px;
     font-weight: 500;
-    color: white;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
 }
 
 .nav-sidebar a:hover {
     background-color: #0066cc;
     border-left: 5px solid #ffffff;
-    padding-left: 25px;
-}
-
-/* Content Container Adjustments for Sidebar Navigation */
-.content-container {
-    margin-left: 270px; /* Space for sidebar */
+    padding-left: 25px;  /* Indentation effect on hover */
 }
 
 /* Code Block Styling for Nav Examples */
@@ -93,9 +95,9 @@ pre code {
     margin-top: 20px;
 }
 
-/* Mobile-Friendly Adjustments */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-    /* Adjust for small screens */
+    /* Adjust horizontal nav bar for smaller screens */
     .nav-bar {
         text-align: left;
         padding: 10px 20px;
@@ -109,10 +111,12 @@ pre code {
         margin-bottom: 10px;
     }
 
+    /* Sidebar becomes a top navigation on small screens */
     .nav-sidebar {
         width: 100%;
         position: relative;
         height: auto;
+        border-radius: 0;
     }
 
     .nav-sidebar a {
@@ -120,11 +124,13 @@ pre code {
         padding: 10px 15px;
     }
 
+    /* Adjust content layout for small screens */
     .content-container {
         margin-left: 0; /* Remove sidebar space */
         padding: 10px;
     }
 
+    /* Adjust code block padding for mobile */
     pre code {
         font-size: 13px;
         padding: 10px;
