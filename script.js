@@ -1,16 +1,20 @@
 const links = document.querySelectorAll('nav a');
-const content = document.getElementById('content');
+const hemLink = document.querySelector('a[href="pages/index.html"]');
 
 links.forEach(link => {
     link.addEventListener('click', (e) => {
-         e.preventDefault(); // <-- This is critical so that the entire page doesn't reload. Otherwise the sidebar navigation will fail to appear!
-        fetch(link.getAttribute('href'))
-            .then(res => res.text())
-            .then(html => {
-                content.innerHTML = html;
-            })
-            .catch(err => {
-                content.innerHTML = `<p>Error loading page: ${err}</p>`;
-            });
+        if (link === hemLink) {
+        } else {
+            e.preventDefault();
+
+            fetch(link.getAttribute('href'))
+                .then(res => res.text())
+                .then(html => {
+                    document.getElementById('content').innerHTML = html;
+                })
+                .catch(err => {
+                    document.getElementById('content').innerHTML = `<p>Error loading page: ${err}</p>`;
+                });
+        }
     });
 });
