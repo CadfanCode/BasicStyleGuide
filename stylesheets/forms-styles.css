@@ -5,7 +5,7 @@
     padding: 20px;
     background-color: #ffffff;
     color: #003366;
-    margin-left: 270px; /* Push content to the right to leave room for the sidebar */
+    margin-left: 270px; 
     min-height: 100vh;
 }
 
@@ -45,7 +45,7 @@ input[type="text"]:focus, textarea:focus, select:focus {
 
 /* Textarea specific adjustments */
 textarea {
-    resize: vertical; /* Allow vertical resizing */
+    resize: vertical; 
 }
 
 /* Labels for form elements */
