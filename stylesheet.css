@@ -1,319 +1,136 @@
-/* Reset and Global Styles */
-* {
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-html, body {
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    background-color: #ffffff;  /* White background for the body */
-    color: #333333;             /* Dark gray text */
-    height: 100%;
-    min-height: 100%;
-}
-
-/* Typography */
-h1, h2, h3, h4 {
-    font-weight: bold;
-    color: #212529; /* Darker text for all headings */
-}
-
-h1 {
-    font-size: 2.5rem;
-}
-
-h2 {
-    font-size: 2rem;
-}
-
-h3 {
-    font-size: 1.75rem;
-}
-
-h4 {
-    font-size: 1.5rem;
-}
-
-/* Links */
-a {
-    color: #0066cc;
-    text-decoration: none;
-}
-
-a:hover, a:focus {
-    color: #0044aa;
-    text-decoration: underline;
-}
-
-/* Form Elements (from formular-styles.css) */
-input[type="text"], input[type="email"], input[type="password"], textarea {
-    width: 100%;
-    padding: 12px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
-}
-
-input[type="submit"], button[type="submit"] {
-    background-color: #28a745; /* Green submit button */
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-}
-
-input[type="submit"]:hover, button[type="submit"]:hover {
-    background-color: #218838;
-}
-
-input[type="submit"]:focus, button[type="submit"]:focus {
-    outline: 2px solid #218838;
-    outline-offset: 2px;
-}
-
-textarea:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
-    border-color: #0056b3;
-    outline: none;
-}
-
-/* Button Styles (from button-styles.css) */
-
-/* STANDARD BUTTON */
-.button-standard {
-    background-color: #003366;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-.button-standard:hover,
-.button-standard:focus {
-    background-color: #004c8c;
-    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.5);
-    transform: translateY(-1px);
-}
-
-/* FUNCTION BUTTON */
-.button-function {
-    background-color: #ffffff;
-    color: #003366;
-    border: 1px solid #003366;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    box-shadow: none;
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-}
-
-.button-function:hover,
-.button-function:focus {
     background-color: #f0f8ff;
-    color: #0066cc;
-    border-color: #0066cc;
+    color: #003366;
+    min-height: 100vh; 
 }
 
-/* POSITIVE BUTTON */
-.button-positive {
-    background-color: #28a745;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+h1, h2, h3 {
+    color: #003366;
 }
 
-.button-positive:hover,
-.button-positive:focus {
-    background-color: #218838;
-    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.5);
-    transform: translateY(-1px);
-}
-
-/* NEGATIVE BUTTON */
-.button-negative {
-    background-color: #dc3545;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-.button-negative:hover,
-.button-negative:focus {
-    background-color: #c82333;
-    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.5);
-    transform: translateY(-1px);
-}
-
-/* DISABLED STATE */
-button:disabled, .button-standard:disabled, .button-function:disabled, .button-positive:disabled, .button-negative:disabled {
-    background-color: #cccccc;
-    color: #666666;
-    border-color: #999999;
-    cursor: not-allowed;
-    box-shadow: none;
-    transform: none;
-}
-
-/* Accessibility: Ensuring good contrast */
-button, .button-standard, .button-function, .button-positive, .button-negative, a, h1, h2, h3, h4, p {
-    color: #212529; /* Ensures all text is dark enough for AAA contrast */
-}
-
-/* Code Example Areas */
-pre, code {
-    background-color: #f4f4f4; /* Light gray background for code blocks */
-    color: #333333;             /* Dark gray text for code */
-    padding: 10px;
-    border-radius: 4px;
-    overflow-x: auto;
-    font-family: Consolas, Monaco, monospace;
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-pre {
-    background-color: #1e1e1e; /* Dark background for preformatted blocks */
-    color: white;               /* White text for contrast */
-    padding: 20px;
-}
-
-/* Color Scheme (from colorscheme-styles.css) */
-:root {
-    --primary-bg-color: #ffffff;
-    --primary-text-color: #333333;
-    --highlight-color: #f0f0f0; /* Light gray for highlights */
-    --accent-color: #0066cc; /* Blue accents */
-    --button-bg-color: #007bff;
-    --button-hover-color: #0056b3;
-}
-
-body {
-    background-color: var(--primary-bg-color);
-    color: var(--primary-text-color);
-}
-
-/* Tables */
-table {
-    width: 100%;
-    border-collapse: collapse;
+ul {
     margin-top: 20px;
+    padding-left: 20px;
+    list-style-type: disc;
 }
 
-th, td {
-    padding: 10px;
-    border: 1px solid #ccc;
-    text-align: left;
-    font-size: 14px;
+ul li {
+    margin-bottom: 10px;
 }
 
-th {
+pre code {
     background-color: #f8f8f8;
-    color: #212529;
-}
-
-table tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-table tr:hover {
-    background-color: #f1f1f1; /* Light gray background on hover */
-}
-
-/* Panels */
-.panel {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 10px;
     border-radius: 4px;
-}
-
-.panel-heading {
-    font-weight: bold;
-    color: #333333;
-}
-
-.panel-body {
-    margin-top: 10px;
-    font-size: 14px;
+    font-family: Consolas, monospace;
+    color: #003366;
+    display: block;
+    overflow-x: auto;
 }
 
 /* Navigation */
-nav {
-    background-color: #333333;
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav li {
-    margin-right: 20px;
-}
-
-nav a {
+.nav-one {
+    width: 250px;
+    background-color: #003366;
     color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    overflow-y: auto; 
 }
 
-nav a:hover, nav a:focus {
-    color: #007bff;
-}
-
-nav a:active {
-    color: #0056b3;
-}
-
-/* Footer */
-footer {
-    background-color: #212529;
-    color: white;
-    padding: 15px 0;
-    text-align: center;
-}
-
-footer a {
+.nav-one a {
+    display: block;
     color: #ffffff;
     text-decoration: none;
+    margin: 10px 0;
+    font-size: 16px;
 }
 
-footer a:hover {
-    color: #007bff;
+.nav-one a:hover {
+    background-color: #0066cc;
+    padding-left: 10px;
 }
 
-/* Alerts and Messages */
-.alert {
-    padding: 15px;
-    margin-bottom: 20px;
+/* Content Container */
+.content-container {
+    padding: 20px;
+    background-color: #ffffff;
+    color: #003366;
+    margin-left: 270px; 
+    min-height: 100vh;
+}
+
+/* Loading Indicators */
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #003366;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 20px 0;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-progress-container {
+    width: 100%;
+    background-color: #f3f3f3;
     border-radius: 4px;
-    font-size: 1rem;
+    overflow: hidden;
+    margin: 20px 0;
 }
 
-.alert-info {
-    background-color: #d1ecf1;
-    color: #0c5460;
-    border: 
+.loading-progress {
+    width: 0%;
+    height: 20px;
+    background-color: #0066cc;
+    animation: progress 3s ease-in-out forwards;
+}
+
+@keyframes progress {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
+
+/* Mobile-Friendly Adjustments */
+@media (max-width: 768px) {
+    .container { 
+        flex-direction: column;
+    }
+
+    .nav-one {
+        position: relative;
+        width: 100%;
+        height: auto;
+        bottom: auto;
+        padding: 15px;
+    }
+
+    .nav-one a {
+        font-size: 14px;
+    }
+
+    .content-container {
+        padding: 15px;
+        margin-left: 0; 
+        min-height: auto; 
+    }
+
+    pre code {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
