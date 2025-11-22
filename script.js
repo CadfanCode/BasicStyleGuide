@@ -1,9 +1,8 @@
 const links = document.querySelectorAll('nav a');
-const hemLink = document.querySelector('a[href="pages/index.html"]');
 
 links.forEach(link => {
     link.addEventListener('click', (e) => {
-        if (link === hemLink) {
+        if (link.getAttribute('href') === '/') {
         } else {
             e.preventDefault();
 
