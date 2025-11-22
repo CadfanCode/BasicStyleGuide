@@ -49,7 +49,7 @@
 }
 
 .nav-sidebar {
-    width: 100%;  /* Make the sidebar take full width of its container */
+    width: 33.3%;
     background-color: #003366;
     padding-top: 20px;
     box-sizing: border-box;
@@ -111,7 +111,7 @@ pre code {
 
     /* Sidebar becomes a top navigation on small screens */
     .nav-sidebar {
-        width: 33.33%;
+        width: auto;
         position: relative;
         height: auto;
         border-radius: 0;
