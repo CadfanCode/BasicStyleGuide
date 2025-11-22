@@ -1,4 +1,4 @@
-/* --- BASE BUTTON STYLES --- */
+/* BASE BUTTON STYLES */
 .button, .button-standard, .button-function, .button-positive, .button-negative {
     display: inline-block;
     padding: 10px 20px;
@@ -14,7 +14,7 @@
     border: none;
 }
 
-/* --- STANDARD BUTTON (Primary Action) --- */
+/* STANDARD BUTTON  */
 .button-standard {
     background-color: #003366;
     color: #ffffff;
@@ -27,7 +27,7 @@
     transform: translateY(-1px);
 }
 
-/* --- FUNCTION BUTTON (Secondary/Ghost Action) --- */
+/* FUNCTION BUTTON */
 .button-function {
     background-color: #ffffff;
     color: #003366;
@@ -42,7 +42,7 @@
     border-color: #0066cc;
 }
 
-/* --- POSITIVE BUTTON (Success/Save Actions) --- */
+/* POSITIVE BUTTON */
 .button-positive {
     background-color: #28a745;
     color: #ffffff;
@@ -55,7 +55,7 @@
     transform: translateY(-1px);
 }
 
-/* --- NEGATIVE BUTTON (Destructive/Cancel Actions) --- */
+/* NEGATIVE BUTTON */
 .button-negative {
     background-color: #dc3545;
     color: #ffffff;
@@ -68,7 +68,7 @@
     transform: translateY(-1px);
 }
 
-/* --- DISABLED STATE --- */
+/* DISABLED STATE */
 button:disabled {
     background-color: #cccccc;
     color: #666666;
