@@ -2,8 +2,8 @@
 :root {
     --color-primary: #007bff;
     --color-primary-bg: #f0f7ff;
-    --color-secondary: #6c757d;
-    --color-secondary-bg: #f8f9fa;
+    --color-secondary: #495057;
+    --color-secondary-bg: #e9ecef;
     --color-success: #28a745;
     --color-success-bg: #eafaf1;
     --color-light: #ffffff;
@@ -71,13 +71,17 @@ hr {
     color: var(--color-light);
 }
 
-/* Secondary Panel */
+/* Secondary Panel - Adjusted Color */
 .panel-secondary {
     border-color: var(--color-secondary);
 }
 .panel-secondary .panel-header {
     background-color: var(--color-secondary);
     color: var(--color-light);
+}
+.panel-secondary .panel-body {
+    background-color: var(--color-secondary-bg);
+    color: var(--color-text-main);
 }
 
 /* Success Panel */
@@ -96,7 +100,7 @@ hr {
 /* --- CODE EXAMPLE PRESENTATION --- */
 .code-example-block {
     background-color: #f8f9fa;
-    border: 1px solid #e9ecef;
+    border: 1px solid #e9ecef; 
     border-radius: var(--border-radius);
     padding: 1rem;
     margin-bottom: 2rem;
