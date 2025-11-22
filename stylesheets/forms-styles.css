@@ -1,153 +1,91 @@
-/* Forms Page Specific Styles */
-
-/* Ensure the content container has padding and spacing */
-.content-container {
-    padding: 30px;
-    background-color: #ffffff;
-    color: #003366;
-    margin-left: 270px; /* Push content to the right to leave room for the sidebar */
-    min-height: 100vh;
-    box-sizing: border-box;
-}
-
-/* Headings */
-h1 {
-    color: #003366;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-
-h2 {
-    color: #003366;
-    font-size: 1.75rem;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-weight: 600;
-    border-bottom: 2px solid #003366;
-    padding-bottom: 5px;
-}
-
-/* Paragraph Styling */
-p {
-    line-height: 1.6;
-    font-size: 1rem;
-    margin-bottom: 15px;
-    color: #333333;
-}
-
-/* Form Elements Styling */
+/* Forms Page Styles */
 form {
-    margin-bottom: 30px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
-/* Input Fields and Textareas */
-input[type="text"], textarea, select {
-    width: 100%;
-    padding: 12px;
-    margin-top: 10px;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    color: #003366;
-    background-color: #f9f9f9;
-    transition: border-color 0.3s ease;
+h1, h2 {
     margin-bottom: 20px;
 }
 
-/* Input fields on focus */
-input[type="text"]:focus, textarea:focus, select:focus {
-    border-color: #0066cc;
-    outline: none;
-}
-
-/* Textarea specific adjustments */
-textarea {
-    resize: vertical; /* Allow vertical resizing */
-}
-
-/* Labels for form elements */
 label {
     display: block;
     font-size: 16px;
-    font-weight: 500;
     margin-bottom: 8px;
     color: #003366;
 }
 
-/* Radio buttons and checkboxes */
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background-color: #f8f8f8;
+    color: #003366;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #0066cc;
+    outline: none;
+    background-color: #e6f2ff;
+}
+
+textarea {
+    resize: vertical;
+}
+
 input[type="radio"], input[type="checkbox"] {
     margin-right: 10px;
 }
 
-/* Button Styling */
-button {
-    padding: 10px 20px;
+input[type="radio"]:checked, input[type="checkbox"]:checked {
     background-color: #0066cc;
-    color: white;
-    border: none;
+    border-color: #0066cc;
+}
+
+pre code {
+    background-color: #f8f8f8;
+    padding: 10px;
     border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: Consolas, monospace;
+    color: #003366;
+    display: block;
     margin-top: 10px;
 }
 
-button:hover {
-    background-color: #005bb5;
-    transform: translateY(-2px);
-}
-
-button:focus {
-    outline: none;
-}
-
-/* Form section spacing */
-.form-section {
-    margin-bottom: 30px;
-}
-
-/* Code Styling */
-pre code {
-    font-size: 14px;
-    padding: 12px;
-    background-color: #f7f7f7;
+/* Button Styling */
+button {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
     border-radius: 4px;
-    color: #333333;
-    overflow-x: auto;
+    cursor: pointer;
     margin-top: 20px;
-    border: 1px solid #ddd;
+    display: inline-block;
 }
 
-/* Add spacing between form sections */
-form h2 {
-    margin-top: 20px;
+button:hover {
+    background-color: #0066cc;
 }
 
 /* Mobile-Friendly Adjustments */
 @media (max-width: 768px) {
-    .content-container {
-        padding: 15px;
-        margin-left: 0;
+    form {
+        margin-top: 15px;
+        margin-bottom: 30px;
     }
 
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    h2 {
-        font-size: 1.25rem;
-    }
-
-    input[type="text"], textarea, select {
-        padding: 10px;
+    input[type="text"], textarea {
+        font-size: 14px;
     }
 
     button {
-        width: 100%;
+        font-size: 14px;
+        padding: 8px 16px;
     }
 }
