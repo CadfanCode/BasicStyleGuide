@@ -1,16 +1,17 @@
 <link rel="stylesheet" href="stylesheets/panel-styles.css">
-  <div class="panel panel-primary">
-    <div class="panel-header">
-      <h3 class="panel-title">Primary Panel Title</h3>
+<div class="content-container">
+    <div class="panel panel-primary">
+        <div class="panel-header">
+            <h3 class="panel-title">Primary Panel Title</h3>
+        </div>
+        <div class="panel-body">
+            <p>This panel uses the primary color for standard, important content.</p>
+        </div>
     </div>
-    <div class="panel-body">
-      <p>This panel uses the primary color for standard, important content.</p>
-    </div>
-  </div>
 
-  <div class="code-example-block">
-    <h4>HTML Source:</h4>
-    <pre><code class="language-html">
+    <div class="code-example-block">
+        <h4>HTML Source:</h4>
+        <pre><code class="language-html">
 &lt;div class="panel panel-primary"&gt;
   &lt;div class="panel-header"&gt;
     &lt;h3 class="panel-title"&gt;Primary Panel Title&lt;/h3&gt;
@@ -20,65 +21,66 @@
   &lt;/div&gt;
 &lt;/div&gt;
     </code></pre>
-    <h4>Associated CSS Classes:</h4>
-    <pre><code class="language-css">
+        <h4>Associated CSS Classes:</h4>
+        <pre><code class="language-css">
 .panel-primary { border-color: var(--color-primary); }
 .panel-primary .panel-header { background-color: var(--color-primary); }
 .panel-primary .panel-title,
 .panel-primary .panel-body { color: var(--color-light); }
     </code></pre>
-  </div>
-  
-  ---
-
-  <div class="panel panel-secondary">
-    <div class="panel-header">
-      <h3 class="panel-title">Secondary Panel Title</h3>
     </div>
-    <div class="panel-body">
-      <p>This panel uses a secondary color for supplementary information.</p>
-    </div>
-  </div>
 
-  <div class="code-example-block">
-    <h4>HTML Source:</h4>
-    <pre><code class="language-html">
+    ---
+
+    <div class="panel panel-secondary">
+        <div class="panel-header">
+            <h3 class="panel-title">Secondary Panel Title</h3>
+        </div>
+        <div class="panel-body">
+            <p>This panel uses a secondary color for supplementary information.</p>
+        </div>
+    </div>
+
+    <div class="code-example-block">
+        <h4>HTML Source:</h4>
+        <pre><code class="language-html">
 &lt;div class="panel panel-secondary"&gt;
   ...
 &lt;/div&gt;
     </code></pre>
-    <h4>Associated CSS Classes:</h4>
-    <pre><code class="language-css">
+        <h4>Associated CSS Classes:</h4>
+        <pre><code class="language-css">
 .panel-secondary { border-color: var(--color-secondary); }
 .panel-secondary .panel-header { background-color: var(--color-secondary); }
 .panel-secondary .panel-title,
 .panel-secondary .panel-body { color: var(--color-light); }
     </code></pre>
-  </div>
-  
-  ---
-
-  <div class="panel panel-success">
-    <div class="panel-header">
-      <h3 class="panel-title">Success Panel</h3>
     </div>
-    <div class="panel-body">
-      <p>Content related to a successful operation or positive confirmation.</p>
-    </div>
-  </div>
 
-  <div class="code-example-block">
-    <h4>HTML Source:</h4>
-    <pre><code class="language-html">
+    ---
+
+    <div class="panel panel-success">
+        <div class="panel-header">
+            <h3 class="panel-title">Success Panel</h3>
+        </div>
+        <div class="panel-body">
+            <p>Content related to a successful operation or positive confirmation.</p>
+        </div>
+    </div>
+
+    <div class="code-example-block">
+        <h4>HTML Source:</h4>
+        <pre><code class="language-html">
 &lt;div class="panel panel-success"&gt;
   ...
 &lt;/div&gt;
     </code></pre>
-    <h4>Associated CSS Classes:</h4>
-    <pre><code class="language-css">
+        <h4>Associated CSS Classes:</h4>
+        <pre><code class="language-css">
 .panel-success { border-color: var(--color-success); }
 .panel-success .panel-header { background-color: var(--color-success); }
 /* Note: Text is dark text on lightened background */
 .panel-success .panel-body { background-color: /* Lighter success color */; } 
     </code></pre>
-  </div>
+    </div>
+</div>
