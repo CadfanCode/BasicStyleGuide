@@ -1,0 +1,132 @@
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 12px 15px;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Horizontal Navigation Bar */
+.nav-bar {
+    background-color: #003366;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 6px;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+}
+
+.nav-bar li {
+    margin-right: 15px;
+}
+
+.nav-bar a {
+    transition: background-color 0.3s ease;
+}
+
+.nav-bar a:hover {
+    background-color: #0066cc;
+    border-radius: 4px;
+}
+
+/* Sidebar Navigation */
+.nav-sidebar {
+    width: 250px;
+    background-color: #003366;
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.nav-sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-sidebar li {
+    margin: 10px 0;
+}
+
+.nav-sidebar a {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.nav-sidebar a:hover {
+    background-color: #0066cc;
+    border-left: 5px solid #ffffff;
+    padding-left: 25px;
+}
+
+/* Content Container Adjustments for Sidebar Navigation */
+.content-container {
+    margin-left: 270px; /* Space for sidebar */
+}
+
+/* Code Block Styling for Nav Examples */
+pre code {
+    font-size: 14px;
+    padding: 12px;
+    background-color: #f7f7f7;
+    border-radius: 4px;
+    color: #333333;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+/* Mobile-Friendly Adjustments */
+@media (max-width: 768px) {
+    /* Adjust for small screens */
+    .nav-bar {
+        text-align: left;
+        padding: 10px 20px;
+    }
+
+    .nav-bar ul {
+        display: block;
+    }
+
+    .nav-bar li {
+        margin-bottom: 10px;
+    }
+
+    .nav-sidebar {
+        width: 100%;
+        position: relative;
+        height: auto;
+    }
+
+    .nav-sidebar a {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .content-container {
+        margin-left: 0; /* Remove sidebar space */
+        padding: 10px;
+    }
+
+    pre code {
+        font-size: 13px;
+        padding: 10px;
+    }
+}
