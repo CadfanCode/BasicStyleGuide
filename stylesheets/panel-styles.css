@@ -45,11 +45,19 @@
 .panel-primary { border-color: var(--color-primary); }
 .panel-primary .panel-header { background: var(--color-primary); color: var(--color-light); }
 
-.panel-secondary { border-color: var(--color-secondary); }
-.panel-secondary .panel-header { background: var(--color-secondary); color: var(--color-light); }
-.panel-secondary .panel-body { background: #e9ecef; color: var(--color-text-main); }
-
-.panel-success { border-color: var(--color-success); }
+.panel-secondary {
+    border-color: var(--color-secondary);
+}
+.panel-secondary .panel-header {
+    background: var(--color-secondary);
+    color:var(--color-light);  /* White text for the header */
+}
+.panel-secondary .panel-body {
+    background: #e9ecef;
+     color:var(--color-light);
+     
+.panel-success { 
+    border-color: var(--color-success); }
 .panel-success .panel-header { background: var(--color-success); color: var(--color-light); }
 .panel-success .panel-body { background: #eafaf1; color: #155724; }
 
