@@ -46,7 +46,7 @@
 .panel-primary .panel-header { background: var(--color-primary); color: var(--color-light); }
 
 .panel-secondary { border-color: var(--color-secondary); }
-.panel-secondary .panel-header { background: var(--color-secondary); color: var(--color-light); }
+.panel-secondary .panel-header  h3{ background: var(--color-secondary); color: var(--color-light); }
 .panel-secondary .panel-body { background: #e9ecef; color: var(--color-text-main); }
 
 .panel-success { border-color: var(--color-success); }
