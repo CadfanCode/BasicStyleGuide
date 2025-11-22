@@ -36,11 +36,6 @@
     font-weight: 600;
 }
 
-.panel-body {
-    padding: 12px 15px;
-    color: var(--color-text-muted);
-}
-
 /* Panel Variants */
 .panel-primary { border-color: var(--color-primary); }
 .panel-primary .panel-header { background: var(--color-primary); color: var(--color-light); }
@@ -66,24 +61,6 @@
 .code-example-block h4 {
     margin: 0 0 5px;
     font-size: 14px;
-    color: #adb5bd;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
-
-pre {
-    background: #4e4e4e;
-    color: #ccc;
-    padding: 10px;
-    border-radius: 1px;
-    margin-bottom: 12px;
-    overflow-x: auto;
-}
-
-code {
-    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-    font-size: 14px;
-}
-
-/* Syntax Highlighting Simulation */
-.language-html, .language-css { display: block; }
