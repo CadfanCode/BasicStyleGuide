@@ -5,6 +5,8 @@ body {
     padding: 0;
     background-color: #f0f8ff;
     color: #003366;
+    /* Added to ensure the body stretches full viewport height for fixed elements to work well */
+    min-height: 100vh; 
 }
 
 h1, h2, h3 {
@@ -31,14 +33,6 @@ pre code {
     overflow-x: auto;
 }
 
-/* Content Container */
-.content-container {
-    padding: 20px;
-    background-color: #ffffff;
-    color: #003366;
-    margin-left: 270px; /* Add left margin to offset fixed navigation */
-}
-
 /* Navigation */
 .nav-one {
     width: 250px;
@@ -50,7 +44,9 @@ pre code {
     top: 0;
     left: 0;
     bottom: 0;
-    z-index: 1000; /* Ensure nav stays on top */
+    z-index: 1000;
+    /* Added overflow-y to allow vertical scrolling within the navigation itself if there are too many links */
+    overflow-y: auto; 
 }
 
 .nav-one a {
@@ -66,6 +62,17 @@ pre code {
     padding-left: 10px;
 }
 
+/* Content Container */
+.content-container {
+    padding: 20px;
+    background-color: #ffffff;
+    color: #003366;
+    /* Left margin correctly offsets the 250px nav + 20px for visual spacing/padding */
+    margin-left: 270px; 
+    /* Ensures content uses full remaining height if needed, though usually content pushes the height */
+    min-height: 100vh;
+}
+
 /* BUTTONS */
 .button-standard {
     border-radius: 8px;
@@ -73,7 +80,7 @@ pre code {
 }
 
 .button-function {
-    border-radius: 8px; /* This determines the roundness of the corners */
+    border-radius: 8px;
     border: 1px solid #e7e7e7; 
 }
 
@@ -119,23 +126,28 @@ pre code {
 
 /* Mobile-Friendly Adjustments */
 @media (max-width: 768px) {
-    .container {
+    /* Assuming a containing div for the layout, though not explicitly in the HTML */
+    .container { 
         flex-direction: column;
     }
 
-    nav {
-        position: relative;
+    /* Targetting .nav-one instead of generic 'nav' */
+    .nav-one {
+        position: relative; /* Change fixed to relative to stack it normally */
         width: 100%;
+        height: auto; /* Allow height to collapse to content */
+        bottom: auto;
         padding: 15px;
     }
 
-    nav a {
+    .nav-one a {
         font-size: 14px;
     }
 
     .content-container {
         padding: 15px;
         margin-left: 0; /* Remove left margin on smaller screens */
+        min-height: auto; /* Reset min-height for mobile stacking */
     }
 
     pre code {
