@@ -16,16 +16,6 @@
     --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
 }
 
-
-.content-container {
-    max-width: 800px;
-    margin: 0 auto;
-    background: #fff;
-    padding: 2rem;
-    border-radius: var(--border-radius);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
-
 /* Separator styling */
 hr {
     border: 0;
@@ -90,7 +80,7 @@ hr {
     color: var(--color-light);
 }
 
-/* Success Panel (Variation: Light background body) */
+/* Success Panel */
 .panel-success {
     border-color: var(--color-success);
 }
@@ -123,10 +113,10 @@ hr {
 
 /* Pre/Code styling */
 pre {
-    background-color: #2d2d2d;
+    background-color: #4e4e4e;
     color: #ccc;
     padding: 1rem;
-    border-radius: 6px;
+    border-radius: 1px;
     overflow-x: auto;
     margin-bottom: 1.5rem;
     margin-top: 0;
