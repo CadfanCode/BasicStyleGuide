@@ -36,6 +36,7 @@ pre code {
     padding: 20px;
     background-color: #ffffff;
     color: #003366;
+    margin-left: 270px; /* Add left margin to offset fixed navigation */
 }
 
 /* Navigation */
@@ -49,6 +50,7 @@ pre code {
     top: 0;
     left: 0;
     bottom: 0;
+    z-index: 1000; /* Ensure nav stays on top */
 }
 
 .nav-one a {
@@ -131,13 +133,9 @@ pre code {
         font-size: 14px;
     }
 
-    .content {
-        margin-left: 0;
-        padding: 15px;
-    }
-
     .content-container {
         padding: 15px;
+        margin-left: 0; /* Remove left margin on smaller screens */
     }
 
     pre code {
