@@ -1,70 +1,68 @@
+/* Forms Page Specific Styles */
 
-/* General Content Adjustments */
+/* Ensure the content container has padding and spacing */
 .content-container {
     padding: 20px;
     background-color: #ffffff;
     color: #003366;
+    margin-left: 270px; /* Push content to the right to leave room for the sidebar */
+    min-height: 100vh;
 }
 
-/* Form Styles */
-form {
-    margin-bottom: 30px; /* Space between different form sections */
-}
-
-/* Form Element Styling */
-label {
-    display: block;
-    font-size: 16px;
-    font-weight: 500;
+/* Basic heading and paragraph styling */
+h1, h2 {
     color: #003366;
-    margin-bottom: 8px;
-    margin-top: 20px; /* Space before the label */
 }
 
+h2 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+/* Form element styling */
+form {
+    margin-bottom: 30px;
+}
+
+/* Input fields and textareas */
 input[type="text"], textarea, select {
     width: 100%;
     padding: 12px;
     margin-top: 8px;
     border: 2px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; /* Ensures padding does not affect width */
     font-size: 16px;
     color: #003366;
     background-color: #f9f9f9;
     transition: border-color 0.3s ease;
 }
 
+/* Focus effect for form elements */
 input[type="text"]:focus, textarea:focus, select:focus {
     border-color: #0066cc;
     outline: none;
 }
 
+/* Textarea specific adjustments */
 textarea {
-    resize: vertical; /* Allows the user to resize textarea vertically */
+    resize: vertical; /* Allow vertical resizing */
 }
 
+/* Labels for form elements */
+label {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #003366;
+}
+
+/* Radio buttons and checkboxes */
 input[type="radio"], input[type="checkbox"] {
     margin-right: 10px;
 }
 
-/* Button Styling */
-button {
-    background-color: #003366;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #0066cc;
-}
-
-/* Code Block Styling for Form Examples */
+/* Add some margin to code blocks */
 pre code {
     font-size: 14px;
     padding: 12px;
@@ -75,27 +73,32 @@ pre code {
     margin-top: 20px;
 }
 
-/* Responsive Adjustments */
+/* Form section spacing */
+form h2 {
+    margin-top: 20px;
+}
+
+/* Example for specific spacing or adjustments */
+.form-section {
+    margin-bottom: 30px;
+}
+
+/* Responsive for mobile devices */
 @media (max-width: 768px) {
-    /* Adjust form elements for smaller screens */
+    .content-container {
+        padding: 15px;
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    h2 {
+        font-size: 1.125rem;
+    }
+
     input[type="text"], textarea, select {
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    button {
-        font-size: 14px;
-        padding: 10px 18px;
-    }
-
-    /* Adjust label spacing for small screens */
-    label {
-        font-size: 14px;
-    }
-
-    /* Adjust code block padding for mobile */
-    pre code {
-        font-size: 13px;
         padding: 10px;
     }
 }
