@@ -1,0 +1,102 @@
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #e0e0e0;
+    vertical-align: middle;
+}
+
+th {
+    background-color: #003366;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    background-color: #fafafa;
+}
+
+td:hover {
+    background-color: #f1f1f1;
+}
+
+.table-long th, .table-long td {
+    font-size: 16px;
+}
+
+.table-long tbody tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+/* Specific Style for Long List Table */
+.table-long {
+    margin-bottom: 30px;
+}
+
+.table-long th, .table-long td {
+    padding: 10px 15px;
+}
+
+/* Specific Style for Wide Table */
+.table-wide th, .table-wide td {
+    padding: 15px 20px;
+}
+
+.table-wide th {
+    text-align: center;
+}
+
+.table-wide td {
+    text-align: center;
+}
+
+/* Code Block Styling */
+pre code {
+    font-size: 14px;
+    padding: 12px;
+    background-color: #f7f7f7;
+    border-radius: 4px;
+    color: #333333;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+/* Table Caption Styling (optional) */
+table caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #003366;
+}
+
+/* Responsive Adjustments for Tables */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    .table-long th, .table-long td {
+        font-size: 14px;
+    }
+
+    .table-wide th, .table-wide td {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    pre code {
+        font-size: 13px;
+        padding: 10px;
+    }
+}
