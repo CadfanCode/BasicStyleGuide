@@ -73,21 +73,6 @@ pre code {
     min-height: 100vh;
 }
 
-/* BUTTONS */
-.button-standard {
-    border-radius: 8px;
-    border: 1px solid #003366;
-}
-
-.button-function {
-    border-radius: 8px;
-    border: 1px solid #e7e7e7; 
-}
-
-.button {
-    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.6);
-}
-
 /* Loading Indicators */
 .loading-spinner {
     width: 50px;

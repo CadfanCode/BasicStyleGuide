@@ -1,0 +1,79 @@
+/* --- BASE BUTTON STYLES --- */
+.button, .button-standard, .button-function, .button-positive, .button-negative {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.2;
+    transition: all 0.2s ease-in-out;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,0.3);
+    border: none;
+}
+
+/* --- STANDARD BUTTON (Primary Action) --- */
+.button-standard {
+    background-color: #003366;
+    color: #ffffff;
+}
+
+.button-standard:hover,
+.button-standard:focus {
+    background-color: #004c8c;
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.5);
+    transform: translateY(-1px);
+}
+
+/* --- FUNCTION BUTTON (Secondary/Ghost Action) --- */
+.button-function {
+    background-color: #ffffff;
+    color: #003366;
+    border: 1px solid #003366;
+    box-shadow: none;
+}
+
+.button-function:hover,
+.button-function:focus {
+    background-color: #f0f8ff;
+    color: #0066cc;
+    border-color: #0066cc;
+}
+
+/* --- POSITIVE BUTTON (Success/Save Actions) --- */
+.button-positive {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+.button-positive:hover,
+.button-positive:focus {
+    background-color: #218838;
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.5);
+    transform: translateY(-1px);
+}
+
+/* --- NEGATIVE BUTTON (Destructive/Cancel Actions) --- */
+.button-negative {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+.button-negative:hover,
+.button-negative:focus {
+    background-color: #c82333;
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.5);
+    transform: translateY(-1px);
+}
+
+/* --- DISABLED STATE --- */
+button:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    border-color: #999999;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
