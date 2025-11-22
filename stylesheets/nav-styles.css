@@ -43,18 +43,16 @@
     padding-left: 15px;  /* Add padding on hover for better effect */
 }
 
-/* Sidebar Navigation Styles */
+/* Sidebar Navigation Styles (not fixed) */
+.sidebar-nav-example {
+    margin-top: 40px;  /* Space above the sidebar */
+}
+
 .nav-sidebar {
-    width: 250px;
+    width: 100%;  /* Make the sidebar take full width of its container */
     background-color: #003366;
     padding-top: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
     box-sizing: border-box;
-    z-index: 1000;
-    overflow-y: auto;
     border-radius: 6px;
 }
 
