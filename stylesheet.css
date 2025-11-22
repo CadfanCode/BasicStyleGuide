@@ -31,6 +31,13 @@ pre code {
     overflow-x: auto;
 }
 
+/* Content Container */
+.content-container {
+    padding: 20px;
+    background-color: #ffffff;
+    color: #003366;
+}
+
 /* Navigation */
 .nav-one {
     width: 250px;
@@ -57,11 +64,19 @@ pre code {
     padding-left: 10px;
 }
 
-.content {
-    margin-left: 250px;
-    padding: 20px;
-    background-color: #ffffff;
-    flex-grow: 1;
+/* BUTTONS */
+.button-standard {
+    border-radius: 8px;
+    border: 1px solid #003366;
+}
+
+.button-function {
+    border-radius: 8px; /* This determines the roundness of the corners */
+    border: 1px solid #e7e7e7; 
+}
+
+.button {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.6);
 }
 
 /* Loading Indicators */
@@ -98,13 +113,6 @@ pre code {
 @keyframes progress {
     0% { width: 0%; }
     100% { width: 100%; }
-}
-
-/* Content Container */
-.content-container {
-    padding: 20px;
-    background-color: #ffffff;
-    color: #003366;
 }
 
 /* Mobile-Friendly Adjustments */
