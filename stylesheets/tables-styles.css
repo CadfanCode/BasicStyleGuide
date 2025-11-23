@@ -57,7 +57,6 @@ td:hover {
     text-align: center;
 }
 
-/* Code Block Styling */
 pre code {
     font-size: 14px;
     padding: 12px;
@@ -68,7 +67,6 @@ pre code {
     margin-top: 20px;
 }
 
-/* Table Caption Styling (optional) */
 table caption {
     font-size: 1.5rem;
     font-weight: bold;

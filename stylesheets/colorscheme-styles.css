@@ -1,9 +1,3 @@
-/* colorscheme-styles.css
-   Corrected to match the updated HTML (add id="content" to your .content-container or change skip link)
-   Works with existing global CSS.
-*/
-
-/* Skip link */
 .skip-link {
   position: absolute;
   left: -999px;
@@ -21,7 +15,6 @@
   text-decoration: none;
 }
 
-/* Page lead */
 .content-container .lead {
   max-width: 70ch;
   margin-bottom: 1rem;
@@ -51,7 +44,7 @@
   transform: translateY(-2px);
 }
 
-/* sample block (visual swatch) */
+/* sample block */
 .swatch-sample {
   height: 120px;
   display: flex;
@@ -63,8 +56,6 @@
 .swatch-inner { text-align:center; padding: 12px; }
 .swatch-title { margin: 0; font-weight:700; font-size:1.05rem; }
 .swatch-note { margin: 6px 0 0; font-size:0.875rem; }
-
-/* meta area below swatch */
 .swatch-meta {
   padding: 12px 14px;
   border-top: 1px solid #eef6fb;
@@ -83,25 +74,19 @@
   margin-top:8px;
 }
 
-/* Palette colours (use your hex values) */
-.bg-primary { background-color: #003366; color: #ffffff; }   /* AAA with white */
-.bg-secondary { background-color: #0066cc; color: #ffffff; } /* decorative: text inside is labeled 'decorative' */
-.bg-tertiary { background-color: #66aaff; color: #003366; }  /* inside text uses dark blue (AA) */
-.bg-accent { background-color: #87ceeb; color: #003366; }    /* AAA with dark blue */
-.bg-light { background-color: #f0f8ff; color: #003366; }    /* AAA with dark blue */
+/*Colours*/
+.bg-primary { background-color: #003366; color: #ffffff; }   
+.bg-secondary { background-color: #0066cc; color: #ffffff; }
+.bg-tertiary { background-color: #66aaff; color: #003366; } 
+.bg-accent { background-color: #87ceeb; color: #003366; }  
+.bg-light { background-color: #f0f8ff; color: #003366; }   
 
 /* Explicit text styles for contrast-safe variations */
-.on-dark { color: #ffffff !important; }         /* for dark backgrounds like #003366 */
-.on-light { color: #003366 !important; }        /* for pale backgrounds */
-.on-light-dark { color: #003366 !important; }   /* alias used for #87ceeb */
-.on-light-bg { color: #003366 !important; }     /* alias used in edited HTML */
+.on-dark { color: #ffffff !important; }        
+.on-light { color: #003366 !important; }       
+.on-light-dark { color: #003366 !important; }   
+.on-light-bg { color: #003366 !important; }     
 
-/* Decorative state styling (for swatches not allowed to hold body text) */
-.decorative {
-  font-weight:700;
-  color: rgba(255,255,255,0.95);
-  margin:0;
-}
 .bg-secondary .swatch-overlay {
   text-align:center;
   padding: 12px;
@@ -116,7 +101,6 @@
   margin-top:10px;
 }
 
-/* Legend / aside */
 .legend {
   margin-top: 18px;
   background: #ffffff;
@@ -127,13 +111,11 @@
   color: #003366;
 }
 
-/* Accessibility: focus outlines for interactive controls */
 button:focus, a:focus {
   outline: 3px solid rgba(0,102,204,0.22);
   outline-offset: 3px;
 }
 
-/* Make code tags in legend readable */
 .legend code {
   background: #f6fafe;
   padding: 2px 6px;
@@ -142,14 +124,7 @@ button:focus, a:focus {
   color: #003366;
 }
 
-/* Responsive tweaks */
 @media (max-width: 768px) {
   .swatch-sample { height: 110px; }
   .swatch-meta { font-size: 0.92rem; }
-}
-
-/* Optional: ensure content-container has expected stacking context with nav */
-.content-container {
-  /* margin-left is already set in global CSS; keep card spacing consistent */
-  padding-bottom: 40px;
 }

@@ -28,19 +28,19 @@
     padding: 1.25rem;
 }
 
-/* Positive Panel (Success) */
+/* Positive Panel */
 .panel-positive {
     border-color: transparent; 
 }
 
 .panel-positive .panel-header { 
-    background-color: #40B45C; /* Success Color */
-    color: #FFFFFF; /* Light Text */
+    background-color: #40B45C; 
+    color: #FFFFFF; 
 }
 
 .panel-positive .panel-body { 
-    background-color: #F3FDF5; /* Light Success Color */
-    color: #1A472A; /* Dark Success Text */
+    background-color: #F3FDF5;
+    color: #1A472A; 
     border: 1px solid #40B45C;
     border-top: none;
 }
@@ -51,28 +51,28 @@
 }
 
 .panel-neutral .panel-header { 
-    background-color: #66aaff; /* Info Color */
-    color: #FFFFFF; /* Light Text */
+    background-color: #66aaff; 
+    color: #FFFFFF; 
 }
 
 .panel-neutral .panel-body { 
-    background-color: #F0F9FD; /* Light Info Color */
-    color: #003366; /* Dark Info Text */
+    background-color: #F0F9FD; 
+    color: #003366;
     border: 1px solid #66aaff;
     border-top: none;
 }
 
-/* Negative Panel (Error) */
+/* Negative Panel */
 .panel-negative {
     border-color: transparent;
 }
 
 .panel-negative .panel-header { 
-    background-color: #E82C4C; /* Error Color */
+    background-color: #E82C4C;
     color: #003366; 
 
 .panel-negative .panel-body { 
-    background-color: #FFF3F4; /* Light Error Color */
+    background-color: #FFF3F4; 
     color: #fa3153b9; 
     border: 1px solid #E82C4C;
     border-top: none;
