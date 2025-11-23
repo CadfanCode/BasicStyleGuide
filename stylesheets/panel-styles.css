@@ -51,14 +51,14 @@
 }
 
 .panel-neutral .panel-header { 
-    background-color: #1198C2; /* Info Color */
+    background-color: #66aaff; /* Info Color */
     color: #FFFFFF; /* Light Text */
 }
 
 .panel-neutral .panel-body { 
     background-color: #F0F9FD; /* Light Info Color */
-    color: #0B4C63; /* Dark Info Text */
-    border: 1px solid #1198C2;
+    color: #003366; /* Dark Info Text */
+    border: 1px solid #66aaff;
     border-top: none;
 }
 
@@ -69,12 +69,11 @@
 
 .panel-negative .panel-header { 
     background-color: #E82C4C; /* Error Color */
-    color: #FFFFFF; /* Light Text */
-}
+    color: #003366; 
 
 .panel-negative .panel-body { 
     background-color: #FFF3F4; /* Light Error Color */
-    color: #A4001A; /* Dark Error Text */
+    color: #fa3153b9; 
     border: 1px solid #E82C4C;
     border-top: none;
 }
