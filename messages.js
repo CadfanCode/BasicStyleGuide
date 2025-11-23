@@ -1,18 +1,34 @@
-// Example JS to dynamically show messages
 function showMessage(type, text) {
     const container = document.querySelector('.content-container');
+    if (!container) return;
+
     const div = document.createElement('div');
     div.classList.add('message', type);
 
-    // Include warning icon for error messages
-    if (type === 'error') {
-        div.innerHTML = `<p>⚠️ ${text}</p>`;
-    } else {
-        div.innerHTML = `<p>${text}</p>`;
+    // Add icon based on type
+    let icon = '';
+    switch (type) {
+        case 'info':
+            icon = 'ℹ️';
+            break;
+        case 'success':
+            icon = '✔️';
+            break;
+        case 'warning':
+            icon = '⚠️';
+            break;
+        case 'error':
+            icon = '❌';
+            break;
+        default:
+            icon = '';
     }
 
+    div.innerHTML = `<p>${icon} ${text}</p>`;
     container.prepend(div);
 
-    // Auto-hide after 5 seconds
-    setTimeout(() => div.remove(), 5000);
+    // Auto-hide message after 5 seconds
+    setTimeout(() => {
+        div.remove();
+    }, 5000);
 }
