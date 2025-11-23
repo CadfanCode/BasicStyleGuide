@@ -4,15 +4,52 @@
 
     <h2>Spinner Loading Indicator</h2>
     <div class="loading-spinner"></div>
-    <pre><code>&lt;div class="loading-spinner"&gt;&lt;/div&gt;</code></pre>
+    <div class="code-example-block">
+        <h4>HTML source:</h4>
+    <pre><code class="language-html">&lt;div class="loading-spinner"&gt;&lt;/div&gt;</code></pre>
+        <h4> Associated CSS:</h4>
+        <pre><code class="language-css">
+    .loading-spinner {
+        width: 50px;
+        height: 50px;
+        border: 5px solid #f3f3f3;
+        border-top: 5px solid #003366;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: 20px 0;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+        </code></pre>
+    </div>
 
     <h2>Progress Bar Loading Indicator</h2>
     <div class="loading-progress-container">
         <div class="loading-progress"></div>
     </div>
-    <pre><code>&lt;div class="loading-progress-container"&gt;
+    <div class="code-example-block">
+        <h4>HTML source:</h4>
+    <pre><code class="language-html">&lt;div class="loading-progress-container"&gt;
     &lt;div class="loading-progress"&gt;&lt;/div&gt;
 &lt;/div&gt;</code></pre>
+        <h4> Associated CSS:</h4>
+        <pre><code class="language-css">
+        .loading-progress {
+            width: 0%;
+            height: 20px;
+            background-color: #0066cc; 
+            animation: progress 3s ease-in-out forwards;
+        }
+
+        @keyframes progress {
+            0% { width: 0%; }
+            100% { width: 100%; }
+        }
+        </code></pre>
+    </div>
 
     <p>Best practice:</p>
     <ul>
