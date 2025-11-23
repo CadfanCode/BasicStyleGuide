@@ -5,19 +5,90 @@
 
     <h2>Standard Button</h2>
     <button type="button" class="button-standard">Click Me!</button>
-    <pre><code>&lt;button type="button" class="button standard"&gt;Click Me!&lt;/button&gt;</code></pre>
+    <div class="code-example-block">
+        <h4>HTML Source:</h4>
+        <pre><code class="language-html">&lt;button type="button" class="button-standard"&gt;Click Me!&lt;/button&gt;</code></pre>
+        <h4>Associated CSS:</h4>
+        <pre><code class="language-css">
+.button-standard {
+    background-color: #003366;
+    color: #ffffff;
+}
+
+.button-standard:hover,
+.button-standard:focus {
+    background-color: #004c8c;
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.5);
+    transform: translateY(-1px);
+}
+</code></pre>
+    </div>
 
     <h2>Function Button</h2>
     <button type="button" class="button-function">Print</button>
-    <pre><code>&lt;button type="button" class="button function"&gt;Print&lt;/button&gt;</code></pre>
+    <div class="code-example-block">
+        <h4>HTML Source:</h4>
+    <pre><code class="language-html">&lt;button type="button" class="button-function"&gt;Print&lt;/button&gt;</code></pre>
+    <h4>Associated CSS:</h4>
+    <pre><code class="language-css">
+        .button-function {
+    background-color: #ffffff;
+    color: #003366;
+    border: 1px solid #003366;
+    box-shadow: none;
+}
+
+.button-function:hover,
+.button-function:focus {
+    background-color: #f0f8ff;
+    color: #0066cc;
+    border-color: #0066cc;
+}
+</code></pre>
+    </div>
 
     <h2>Positive Button</h2>
     <button type="button" class="button-positive">Save</button>
-    <pre><code>&lt;button type="button" class="button positive"&gt;Save&lt;/button&gt;</code></pre>
+    <div class="code-example-block">
+        <h4>HTML Source:</h4>
+    <pre><code class="language-html">&lt;button type="button" class="button positive"&gt;Save&lt;/button&gt;</code></pre>
+    <h4>Associated CSS:</h4>
+    <pre><code class="language-css">
+        .button-positive {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+.button-positive:hover,
+.button-positive:focus {
+    background-color: #218838;
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.5);
+    transform: translateY(-1px);
+}
+</code></pre>
+    </div>
 
     <h2>Negative Button</h2>
     <button type="button" class="button-negative">Cancel</button>
-    <pre><code>&lt;button type="button" class="button negative"&gt;Cancel&lt;/button&gt;</code></pre>
+    <div class="code-example-block">
+        <h4>HTML Source:</h4>   
+    <pre><code class="language-html">&lt;button type="button" class="button negative"&gt;Cancel&lt;/button&gt;</code></pre>
+    <h4>Associated CSS:</h4>
+    <pre><code class="language-css">
+        .button-negative {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+.button-negative:hover,
+.button-negative:focus {
+    background-color: #c82333;
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.5);
+    transform: translateY(-1px);
+}
+</code></pre>
+    </div>
+
 
     <p>Best practice:</p>
     <ul>

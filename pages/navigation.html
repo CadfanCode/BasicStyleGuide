@@ -4,19 +4,20 @@
     <p>The <code>&lt;nav&gt;</code> element represents a section of the page that contains navigation links. Below are
         examples of a simple navigation bar and a vertical sidebar navigation.</p>
     <div class="simple-nav-example">
-    <h2>Simple Navigation Bar</h2>
-    <p>This navigation style is suitable for top-level links on a page.</p>
+        <h2>Simple Navigation Bar</h2>
+        <p>This navigation style is suitable for top-level links on a page.</p>
 
-    <nav class="nav-bar">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-
-    <pre><code>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="code-example-block">
+            <h4>HTML source:</h4>
+            <pre><code class="language-html">
 &lt;nav class="nav-bar"&gt;
     &lt;ul&gt;
         &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
@@ -26,26 +27,60 @@
     &lt;/ul&gt;
 &lt;/nav&gt;
     </code></pre>
+            <h4>Associated CSS:</h4>
+            <pre><code class="language-css">
+        .nav-bar {
+    background-color: #003366;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 6px;
+    margin-bottom: 30px;  
+}
 
-    <p>&lt;nav&gt; defines a navigation section that contains major navigation links.</p>
-    <p>&lt;ul&gt; defines an unordered list of links.</p>
-    <p>&lt;li&gt; defines each list item in the menu.</p>
-    <p>&lt;a&gt; defines the clickable link itself.</p>
-</div>
-<div class="sidebar-nav-example"></div>
-    <h2>Sidebar Navigation</h2>
-    <p>This style works well for dashboards or pages with multiple subsections.</p>
+.nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+}
 
-    <nav class="nav-sidebar">
-        <ul>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Logout</a></li>
-        </ul>
-    </nav>
+.nav-bar li {
+    margin-right: 15px;
+}
 
-    <pre><code>
+.nav-bar a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.nav-bar a:hover {
+    background-color: #0066cc;
+    padding-left: 15px; 
+}
+    </code></pre>
+        </div>
+
+        <div class="sidebar-nav-example"></div>
+        <h2>Sidebar Navigation</h2>
+        <p>This style works well for dashboards or pages with multiple subsections.</p>
+
+        <nav class="nav-sidebar">
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+        <div class="code-example-block">
+            <h4>HTML source:</h4>
+            <pre><code class="language-html">
 &lt;nav class="nav-sidebar"&gt;
     &lt;ul&gt;
         &lt;li&gt;&lt;a href="#"&gt;Dashboard&lt;/a&gt;&lt;/li&gt;
@@ -55,6 +90,54 @@
     &lt;/ul&gt;
 &lt;/nav&gt;
     </code></pre>
-    </div>
+            <h4>Associated CSS:</h4>
+            <pre><code class="language-css"> 
+    .sidebar-nav-example {
+    margin-top: 40px; /
+}
 
+.nav-sidebar {
+    width: 33.3%;
+    background-color: #003366;
+    padding-top: 20px;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.nav-sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-sidebar li {
+    margin: 10px 0;
+}
+
+.nav-sidebar a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.nav-sidebar a:hover {
+    background-color: #0066cc;
+    border-left: 5px solid #ffffff;
+    padding-left: 25px; 
+}
+</code></pre>
+        </div>
+
+        <div>
+            <h4>Good to know:</h4>
+            <p>&lt;nav&gt; defines a navigation section that contains major navigation links.</p>
+            <p>&lt;ul&gt; defines an unordered list of links.</p>
+            <p>&lt;li&gt; defines each list item in the menu.</p>
+            <p>&lt;a&gt; defines the clickable link itself.</p>
+        </div>
+    </div>
 </div>

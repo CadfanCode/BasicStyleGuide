@@ -31,7 +31,8 @@
             </tr>
         </tbody>
     </table>
-    <pre><code>
+    <div class="code-example-block">
+    <pre><code class="language-html">
 &lt;table class="table-long"&gt;
     &lt;thead&gt;
         &lt;tr&gt;&lt;th>#&lt;/th&gt;&lt;th>Name&lt;/th&gt;&lt;th>Category&lt;/th&gt;&lt;/tr&gt;
@@ -42,11 +43,18 @@
     &lt;/tbody&gt;
 &lt;/table&gt;
     </code></pre>
-    <p>&lt;thead&gt; stands for 'table header' i.e. it groups the uppermost row of the table that contains header cells.</p>
-    <p>&lt;tr&gt; stands for 'table row'.</p>
-    <p>&lt;th&gt; stands for 'table head'; but unlike &lt;thead&gt;, represents a single cell.</p>
-    <p>&lt;td&gt; stands for 'table data' and contains the informational content of a cell. </p>
-    <p>&lt;tbody&gt; groups the body content in a table.</p>
+    <h4>Associated CSS:</h4>
+    <pre><code class="language-css">
+        .table-long {
+    margin-bottom: 30px;
+}
+
+.table-long th, .table-long td {
+    padding: 10px 15px;
+}
+</code>
+</div>
+
     <h2>Wide Table (Many Columns)</h2>
     <p>This table style is suitable for displaying data with multiple columns.</p>
     <table class="table-wide">
@@ -79,7 +87,8 @@
             </tr>
         </tbody>
     </table>
-    <pre><code>
+    <div class="code-example-block">
+    <pre><code lang="html">
 &lt;table class="table-wide"&gt;
     &lt;thead&gt;
         &lt;tr&gt;&lt;th>ID&lt;/th&gt;&lt;th>Name&lt;/th&gt;&lt;th>Category&lt;/th&gt;&lt;th>Status&lt;/th&gt;&lt;th>Date&lt;/th&gt;&lt;th>Notes&lt;/th&gt;&lt;/tr&gt;
@@ -90,4 +99,27 @@
     &lt;/tbody&gt;
 &lt;/table&gt;
     </code></pre>
+    <h4>Associated CSS:</h4>
+    <pre><code class="language-css">
+        .table-wide th, .table-wide td {
+    padding: 15px 20px;
+}
+
+.table-wide th {
+    text-align: center;
+}
+
+.table-wide td {
+    text-align: center;
+}
+</code></pre>
+</div>
+
+<div>
+    <h4>Good to know:</h4>
+    <p>&lt;thead&gt; stands for 'table header' i.e. it groups the uppermost row of the table that contains header cells.</p>
+    <p>&lt;tr&gt; stands for 'table row'.</p>
+    <p>&lt;th&gt; stands for 'table head'; but unlike &lt;thead&gt;, represents a single cell.</p>
+    <p>&lt;td&gt; stands for 'table data' and contains the informational content of a cell. </p>
+    <p>&lt;tbody&gt; groups the body content in a table.</p>
 </div>
