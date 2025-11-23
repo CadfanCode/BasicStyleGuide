@@ -2,24 +2,24 @@ const links = document.querySelectorAll('nav a');
 
 links.forEach(link => {
     link.addEventListener('click', (e) => {
-        if (link.getAttribute('href') === '/') {
-        } else {
-            e.preventDefault();
+        const href = link.getAttribute('href');
+        if (href === '/') return; // allow home link
 
-            fetch(link.getAttribute('href'))
-                .then(res => res.text())
-                .then(html => {
-                    document.getElementById('content').innerHTML = html;
-                })
-                .catch(err => {
-                    document.getElementById('content').innerHTML = `<p>Error loading page: ${err}</p>`;
-                });
-        }
+        e.preventDefault();
+
+        fetch(href)
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById('content').innerHTML = html;
+            })
+            .catch(err => {
+                document.getElementById('content').innerHTML = `<p>Error loading page: ${err}</p>`;
+            });
     });
 });
 
-function alertDemoFunction() {
-    document.getElementById("alert-button").addEventListener("click",function() {
+document.addEventListener("click", function(e) {
+    if (e.target && e.target.id === "alert-button") {
         alert("This is an alert notification!");
-    });
-}
+    }
+});
