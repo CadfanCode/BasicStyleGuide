@@ -1,51 +1,50 @@
-<link rel="stylesheet" href="stylesheets/messages-styles.css">
+<link rel="stylesheet" href="../stylesheets/messages-styles.css">
+
 <div class="content-container">
-    <h1>Meddelanden &amp; Varningar (Messages &amp; Alerts)</h1>
-    <p>Meddelanden används för att informera användaren om händelser, exempelvis om något har gått fel eller om en sparning har lyckats. Här visas exempel på olika typer av meddelanden. Alla meddelanden använder basklassen <code>.message</code>.</p>
+    <h1>Messages & Alerts</h1>
+    <p>This page demonstrates different types of messages that can appear in your interface, including information, success, warning, and error messages.</p>
 
-    <h2>Lyckat meddelande (Success)</h2>
-    <p>Detta meddelande visas när en åtgärd har genomförts utan problem, exempelvis när data har sparats. (Använder klass: <code>.success</code>)</p>
-
-    <div class="message success">
-        <span class="message-icon">✔️</span> Sparningen lyckades!
-    </div>
-
-    <pre><code>&lt;div class="message success"&gt;
-    &lt;span class="message-icon"&gt;✔️&lt;/span&gt; Sparningen lyckades!
-&lt;/div&gt;</code></pre>
-
-    <h2>Varning (Warning)</h2>
-    <p>Detta meddelande används när något kräver användarens uppmärksamhet men inte är ett kritiskt fel. (Använder klass: <code>.warning</code>)</p>
-
-    <div class="message warning">
-        <span class="message-icon">⚠️</span> Kontrollera uppgifterna igen.
-    </div>
-
-    <pre><code>&lt;div class="message warning"&gt;
-    &lt;span class="message-icon"&gt;⚠️&lt;/span&gt; Kontrollera uppgifterna igen.
-&lt;/div&gt;</code></pre>
-
-    <h2>Felmeddelande (Error)</h2>
-    <p>Detta meddelande visas när något gått fel, t.ex. om data inte kunde sparas eller om servern inte svarar. (Använder klass: <code>.error</code>)</p>
-
-    <div class="message error">
-        <span class="message-icon">❌</span> Ett fel uppstod. Försök igen.
-    </div>
-
-    <pre><code>&lt;div class="message error"&gt;
-    &lt;span class="message-icon"&gt;❌&lt;/span&gt; Ett fel uppstod. Försök igen.
-&lt;/div&gt;</code></pre>
-
-    <h2>Information (Info)</h2>
-    <p>Detta meddelande används för att ge användaren neutral information. (Använder klass: <code>.info</code>)</p>
-
+    <!-- INFORMATION MESSAGE -->
+    <h2>Information Message</h2>
     <div class="message info">
-        <span class="message-icon">ℹ️</span> Den här vyn uppdateras automatiskt.
+        <p>This is an informational message to guide the user.</p>
     </div>
 
-    <pre><code>&lt;div class="message info"&gt;
-    &lt;span class="message-icon"&gt;ℹ️&lt;/span&gt; Den här vyn uppdateras automatiskt.
+    <!-- SUCCESS MESSAGE -->
+    <h2>Success Message</h2>
+    <div class="message success">
+        <p>Your action was completed successfully!</p>
+    </div>
+
+    <!-- WARNING MESSAGE -->
+    <h2>Warning Message</h2>
+    <div class="message warning">
+        <p>Warning! Please check your input before proceeding.</p>
+    </div>
+
+    <!-- ERROR MESSAGE -->
+    <h2>Error Message</h2>
+    <div class="message error">
+        <p>⚠️ Error! Something went wrong, please try again.</p>
+    </div>
+
+    <!-- Example code blocks (HTML + CSS) -->
+    <div class="code-example-block">
+        <h4>HTML source for Error Message:</h4>
+        <pre><code class="language-html">&lt;div class="message error"&gt;
+    &lt;p&gt;⚠️ Error! Something went wrong, please try again.&lt;/p&gt;
 &lt;/div&gt;</code></pre>
 
+        <h4>Associated CSS:</h4>
+        <pre><code class="language-css">.message.error {
+    background-color: #ffe6e6;
+    border-left: 4px solid #cc0000;
+    color: #003366;
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}</code></pre>
+    </div>
 </div>
-<script src="messages.js"></script>
+
+<script src="../messages.js"></script>

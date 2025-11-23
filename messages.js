@@ -1,24 +1,18 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // 1. Select all message elements on the page
-    const messages = document.querySelectorAll('.message');
+// Example JS to dynamically show messages
+function showMessage(type, text) {
+    const container = document.querySelector('.content-container');
+    const div = document.createElement('div');
+    div.classList.add('message', type);
 
-    messages.forEach(message => {
-        // 2. Create the close button element
-        const closeButton = document.createElement('button');
-        closeButton.className = 'message-close-btn';
-        closeButton.innerHTML = '&times;'; // '×' symbol for a close icon
-        closeButton.setAttribute('aria-label', 'Close message');
+    // Include warning icon for error messages
+    if (type === 'error') {
+        div.innerHTML = `<p>⚠️ ${text}</p>`;
+    } else {
+        div.innerHTML = `<p>${text}</p>`;
+    }
 
-        // 3. Attach the dismissal logic
-        closeButton.addEventListener('click', () => {
-            // Find the closest parent with the class 'message' and hide it
-            message.style.opacity = '0';
-            setTimeout(() => {
-                message.style.display = 'none';
-            }, 300); // Wait for the opacity transition to finish
-        });
+    container.prepend(div);
 
-        // 4. Append the close button to the message box
-        message.appendChild(closeButton);
-    });
-});
+    // Auto-hide after 5 seconds
+    setTimeout(() => div.remove(), 5000);
+}
