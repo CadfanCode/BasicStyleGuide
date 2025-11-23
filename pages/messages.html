@@ -1,107 +1,26 @@
-<link rel="stylesheet" href="../stylesheets/messages-styles.css">
-
+<link rel="stylesheet" href="stylesheets/messages-styles.css">
+<link rel="stylesheet" href="stylesheets/button-styles.css">
 <div class="content-container">
-    <h1>Messages & Alerts</h1>
-    <p>This page demonstrates different types of messages that can appear in your interface, including information, success, warning, and error messages. You can also test them using the demo buttons below.</p>
+    <h1>Messages/Alerts</h1>
+    <p></p>
 
-    <!-- INTERACTIVE DEMO -->
-    <h2>Interactive Demo</h2>
-    <div class="message-demo-buttons">
-        <button class="demo-button" onclick="showMessage('info', 'This is an informational message.')">Show Info</button>
-        <button class="demo-button" onclick="showMessage('success', 'Action completed successfully!')">Show Success</button>
-        <button class="demo-button" onclick="showMessage('warning', 'Please check your input.')">Show Warning</button>
-        <button class="demo-button" onclick="showMessage('error', 'An unexpected error occurred.')">Show Error</button>
-    </div>
-
-    <!-- STATIC MESSAGE EXAMPLES -->
-
-    <!-- INFORMATION MESSAGE -->
-    <h2>Information Message</h2>
-    <div class="message info">
-        <p>ℹ️ This is an informational message to guide the user.</p>
-    </div>
-
+    <h2>Alert notification</h2>
+    <button class="button-standard">Click for Alert Notification example!</button>
+    <button onclick=alertDemoFunction()>Show Alert</button>
+    <script>
+        function alertDemoFunction() {
+            alert("This is an alert notification!");
+        }
+    </script>
     <div class="code-example-block">
         <h4>HTML source:</h4>
-        <pre><code class="language-html">&lt;div class="message info"&gt;
-    &lt;p&gt;ℹ️ This is an informational message to guide the user.&lt;/p&gt;
-&lt;/div&gt;</code></pre>
-        <h4>Associated CSS:</h4>
-        <pre><code class="language-css">.message.info {
-    background-color: #e6f0ff;
-    border-left: 4px solid #003366;
-    color: #003366;
-    padding: 12px 15px;
-    border-radius: 6px;
-    margin-bottom: 20px;
-}</code></pre>
+        <pre><code class="language-html">&lt;button onclick="alertDemoFunction()"&gt;Show Alert&lt;/button&gt;
+        </code></pre>
+        <h4>JavaScript source:</h4>
+        <pre><code class="language-javascript">&lt;function&gt; alertDemoFunction() {  
+    alert("This is an alert notification!");
+}
+        </code></pre> 
     </div>
 
-    <!-- SUCCESS MESSAGE -->
-    <h2>Success Message</h2>
-    <div class="message success">
-        <p>✔️ Your action was completed successfully!</p>
-    </div>
-
-    <div class="code-example-block">
-        <h4>HTML source:</h4>
-        <pre><code class="language-html">&lt;div class="message success"&gt;
-    &lt;p&gt;✔️ Your action was completed successfully!&lt;/p&gt;
-&lt;/div&gt;</code></pre>
-        <h4>Associated CSS:</h4>
-        <pre><code class="language-css">.message.success {
-    background-color: #e6ffe6;
-    border-left: 4px solid #0066cc;
-    color: #003366;
-    padding: 12px 15px;
-    border-radius: 6px;
-    margin-bottom: 20px;
-}</code></pre>
-    </div>
-
-    <!-- WARNING MESSAGE -->
-    <h2>Warning Message</h2>
-    <div class="message warning">
-        <p>⚠️ Warning! Please check your input before proceeding.</p>
-    </div>
-
-    <div class="code-example-block">
-        <h4>HTML source:</h4>
-        <pre><code class="language-html">&lt;div class="message warning"&gt;
-    &lt;p&gt;⚠️ Warning! Please check your input before proceeding.&lt;/p&gt;
-&lt;/div&gt;</code></pre>
-        <h4>Associated CSS:</h4>
-        <pre><code class="language-css">.message.warning {
-    background-color: #fff3e6;
-    border-left: 4px solid #ff6600;
-    color: #003366;
-    padding: 12px 15px;
-    border-radius: 6px;
-    margin-bottom: 20px;
-}</code></pre>
-    </div>
-
-    <!-- ERROR MESSAGE -->
-    <h2>Error Message</h2>
-    <div class="message error">
-        <p>❌ Error! Something went wrong, please try again.</p>
-    </div>
-
-    <div class="code-example-block">
-        <h4>HTML source:</h4>
-        <pre><code class="language-html">&lt;div class="message error"&gt;
-    &lt;p&gt;❌ Error! Something went wrong, please try again.&lt;/p&gt;
-&lt;/div&gt;</code></pre>
-        <h4>Associated CSS:</h4>
-        <pre><code class="language-css">.message.error {
-    background-color: #ffe6e6;
-    border-left: 4px solid #cc0000;
-    color: #003366;
-    padding: 12px 15px;
-    border-radius: 6px;
-    margin-bottom: 20px;
-}</code></pre>
-    </div>
 </div>
-
-<script src="../messages.js"></script>
