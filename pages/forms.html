@@ -3,6 +3,7 @@
     <h1>Formulär (Forms)</h1>
     <p>Below are examples of form elements that can be used in your interface, including text fields, buttons, and options for both single and multiple selections.</p>
 
+    <!-- TEXT INPUT -->
     <h2>Text Input</h2>
     <form>
         <label for="name">Your Name:</label>
@@ -10,13 +11,20 @@
 
         <button type="submit" class="submit-button">Submit Name</button>
 
-        <pre><code>&lt;form&gt;
+        <div class="code-example-block">
+            <h4>HTML source:</h4>
+            <pre><code class="language-html">&lt;form&gt;
     &lt;label for="name"&gt;Your Name:&lt;/label&gt;
     &lt;input type="text" id="name" name="name" placeholder="Enter your name" required&gt;
     &lt;button type="submit" class="submit-button"&gt;Submit Name&lt;/button&gt;
 &lt;/form&gt;</code></pre>
+
+            <h4>Associated CSS:</h4>
+            <pre><code class="language-css">/* See main CSS block on page */</code></pre>
+        </div>
     </form>
 
+    <!-- TEXTAREA INPUT -->
     <h2>Textarea Input</h2>
     <form>
         <label for="message">Your Message:</label>
@@ -24,50 +32,75 @@
 
         <button type="submit" class="submit-button">Send Message</button>
 
-        <pre><code>&lt;form&gt;
+        <div class="code-example-block">
+            <h4>HTML source:</h4>
+            <pre><code class="language-html">&lt;form&gt;
     &lt;label for="message"&gt;Your Message:&lt;/label&gt;
     &lt;textarea id="message" name="message" rows="4" placeholder="Write your message here" required&gt;&lt;/textarea&gt;
     &lt;button type="submit" class="submit-button"&gt;Send Message&lt;/button&gt;
 &lt;/form&gt;</code></pre>
+
+            <h4>Associated CSS:</h4>
+            <pre><code class="language-css">/* Uses same input and textarea styling as text input */</code></pre>
+        </div>
     </form>
 
+    <!-- RADIO BUTTONS -->
     <h2>Radio Buttons (Single Choice)</h2>
     <form>
         <fieldset>
             <legend>Do you want to receive updates?</legend>
+
             <div class="radio-group">
                 <input type="radio" id="contact-yes" name="contact" value="yes" checked>
                 <label for="contact-yes">Yes</label>
             </div>
+
             <div class="radio-group">
                 <input type="radio" id="contact-no" name="contact" value="no">
                 <label for="contact-no">No</label>
             </div>
         </fieldset>
-        
+
         <button type="submit" class="submit-button">Save Preference</button>
 
-        <pre><code>&lt;fieldset&gt;
+        <div class="code-example-block">
+            <h4>HTML source:</h4>
+            <pre><code class="language-html">&lt;fieldset&gt;
     &lt;legend&gt;Do you want to receive updates?&lt;/legend&gt;
-    &lt;input type="radio" id="contact-yes" name="contact" value="yes" checked&gt;
-    &lt;label for="contact-yes"&gt;Yes&lt;/label&gt;
-    &lt;input type="radio" id="contact-no" name="contact" value="no"&gt;
-    &lt;label for="contact-no"&gt;No&lt;/label&gt;
+
+    &lt;div class="radio-group"&gt;
+        &lt;input type="radio" id="contact-yes" name="contact" value="yes" checked&gt;
+        &lt;label for="contact-yes"&gt;Yes&lt;/label&gt;
+    &lt;/div&gt;
+
+    &lt;div class="radio-group"&gt;
+        &lt;input type="radio" id="contact-no" name="contact" value="no"&gt;
+        &lt;label for="contact-no"&gt;No&lt;/label&gt;
+    &lt;/div&gt;
 &lt;/fieldset&gt;</code></pre>
+
+            <h4>Associated CSS:</h4>
+            <pre><code class="language-css">/* Spacing handled using .radio-group and input[type=radio] + label */</code></pre>
+        </div>
     </form>
 
+    <!-- CHECKBOXES -->
     <h2>Checkboxes (Multiple Choice)</h2>
     <form>
         <fieldset>
             <legend>Select your interests:</legend>
+
             <div class="checkbox-group">
                 <input type="checkbox" id="interest1" name="interests" value="music">
                 <label for="interest1">Music</label>
             </div>
+
             <div class="checkbox-group">
                 <input type="checkbox" id="interest2" name="interests" value="sports">
                 <label for="interest2">Sports</label>
             </div>
+
             <div class="checkbox-group">
                 <input type="checkbox" id="interest3" name="interests" value="reading">
                 <label for="interest3">Reading</label>
@@ -76,12 +109,29 @@
 
         <button type="submit" class="submit-button">Update Interests</button>
 
-        <pre><code>&lt;fieldset&gt;
+        <div class="code-example-block">
+            <h4>HTML source:</h4>
+            <pre><code class="language-html">&lt;fieldset&gt;
     &lt;legend&gt;Select your interests:&lt;/legend&gt;
-    &lt;input type="checkbox" id="interest1" name="interests" value="music"&gt;
-    &lt;label for="interest1"&gt;Music&lt;/label&gt;
-    &lt;input type="checkbox" id="interest2" name="interests" value="sports"&gt;
-    &lt;label for="interest2"&gt;Sports&lt;/label&gt;
+
+    &lt;div class="checkbox-group"&gt;
+        &lt;input type="checkbox" id="interest1" name="interests" value="music"&gt;
+        &lt;label for="interest1"&gt;Music&lt;/label&gt;
+    &lt;/div&gt;
+
+    &lt;div class="checkbox-group"&gt;
+        &lt;input type="checkbox" id="interest2" name="interests" value="sports"&gt;
+        &lt;label for="interest2"&gt;Sports&lt;/label&gt;
+    &lt;/div&gt;
+
+    &lt;div class="checkbox-group"&gt;
+        &lt;input type="checkbox" id="interest3" name="interests" value="reading"&gt;
+        &lt;label for="interest3"&gt;Reading&lt;/label&gt;
+    &lt;/div&gt;
 &lt;/fieldset&gt;</code></pre>
+
+            <h4>Associated CSS:</h4>
+            <pre><code class="language-css">/* Uses .checkbox-group and shared input/label spacing rules */</code></pre>
+        </div>
     </form>
 </div>
