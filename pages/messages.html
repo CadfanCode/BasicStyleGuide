@@ -11,7 +11,9 @@
         <pre><code class="language-html">&lt;id="alert-button" class="button-standard"&gt;Click for Alert Notification example!&lt;/button&gt;
         </code></pre>
         <h4>JavaScript source:</h4>
-        <pre><code class="language-javascript">document.addEventListener("click", function() {
+        <pre><code class="language-javascript">
+document.addEventListener("click", function(e) {
+    if (e.target && e.target.id === "alert-button") {
         alert("This is an alert notification!");
     }
 });
