@@ -8,13 +8,20 @@
     <button id="alert-button" class="button-standard">Click for Alert Notification example!</button>
     <div class="code-example-block">
         <h4>HTML source:</h4>
-        <pre><code class="language-html">&lt;button onclick="alertDemoFunction()"&gt;Show Alert&lt;/button&gt;
+        <pre><code class="language-html">&lt;id="alert-button" class="button-standard"&gt;Click for Alert Notification example!&lt;/button&gt;
         </code></pre>
         <h4>JavaScript source:</h4>
-        <pre><code class="language-javascript">&lt;function&gt; alertDemoFunction() {  
-    alert("This is an alert notification!");
-}
+        <pre><code class="language-javascript">
+document.addEventListener('DOMContentLoaded', () => {
+    const alertButton = document.getElementById('alert-button');
+
+    if (alertButton) {
+        alertButton.addEventListener('click', () => {
+            alert('Hello! The button was clicked successfully.');
+        });
+    }
+});
         </code></pre> 
     </div>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </div>

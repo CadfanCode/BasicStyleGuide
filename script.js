@@ -18,8 +18,12 @@ links.forEach(link => {
     });
 });
 
-document.addEventListener("click", function(e) {
-    if (e.target && e.target.id === "alert-button") {
-        alert("This is an alert notification!");
+document.addEventListener('DOMContentLoaded', () => {
+    const alertButton = document.getElementById('alert-button');
+
+    if (alertButton) {
+        alertButton.addEventListener('click', () => {
+            alert('Hello! The button was clicked successfully.');
+        });
     }
 });
