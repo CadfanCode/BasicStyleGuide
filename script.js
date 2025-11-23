@@ -19,7 +19,7 @@ links.forEach(link => {
 });
 
 function alertDemoFunction() {
-    document.getElementById("alert-btn").addEventListener("click",function() {
+    document.getElementById("alert-button").addEventListener("click",function() {
         alert("This is an alert notification!");
     });
 }
