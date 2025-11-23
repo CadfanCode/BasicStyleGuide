@@ -1,97 +1,110 @@
-<link rel="stylesheet" href="stylesheets/panel-styles.css">
+<link rel="stylesheet" href="panel-styles.css">
 
 <div class="content-container">
-    <div class="panel panel-primary">
+    <h1>Paneler</h1>
+    <p>Paneler används för att gruppera relaterat innehåll. Välj rätt typ baserat på innehållets karaktär.</p>
+
+    <div class="panel panel-positive">
         <div class="panel-header">
-            <h3 class="panel-title">Primary Panel Title</h3>
+            <h3 class="panel-title">Lyckad åtgärd</h3>
         </div>
         <div class="panel-body">
-            <p>This panel uses the primary color for standard, important content.</p>
+            <p>Operationen har genomförts framgångsrikt. Alla ändringar har sparats och systemet är uppdaterat.</p>
         </div>
     </div>
 
     <div class="code-example-block">
         <h4>HTML Source:</h4>
         <pre><code class="language-html">
-&lt;div class="panel panel-primary"&gt;
-  &lt;div class="panel-header"&gt;
-    &lt;h3 class="panel-title"&gt;Primary Panel Title&lt;/h3&gt;
-  &lt;/div&gt;
+&lt;div class="panel panel-positive"&gt;
+  &lt;div class="panel-header"&gt;Lyckad åtgärd&lt;/div&gt;
   &lt;div class="panel-body"&gt;
-    &lt;p&gt;This panel uses the primary color...&lt;/p&gt;
+    &lt;p&gt;Operationen har genomförts framgångsrikt...&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;
         </code></pre>
 
         <h4>Associated CSS:</h4>
         <pre><code class="language-css">
-.panel-primary {
-  border-color: #007bff;
+.panel-positive .panel-header {
+  background-color: #40B45C; 
+  color: #FFFFFF; 
 }
-.panel-primary .panel-header {
-  background-color: #007bff;
-}
-.panel-primary .panel-title, .panel-primary .panel-body {
-  color: #fff;
+.panel-positive .panel-body {
+  background-color: #F3FDF5; 
+  color: #1A472A; 
+  border: 1px solid #40B45C;
+  border-top: none;
 }
         </code></pre>
     </div>
 
-    <div class="panel-secondary">
+    <div class="panel panel-neutral">
         <div class="panel-header">
-            <h3 class="panel-title">Secondary Panel Title</h3>
+            <h3 class="panel-title">Information</h3>
         </div>
         <div class="panel-body">
-            <p>This panel uses a secondary color for supplementary information.</p>
+            <p>Här är viktig information som användaren bör känna till. Detta är standardpanelen för neutral information.</p>
         </div>
     </div>
 
     <div class="code-example-block">
         <h4>HTML Source:</h4>
-        <pre><code>
-&lt;div class="panel panel-secondary"&gt;
-  ...
+        <pre><code class="language-html">
+&lt;div class="panel panel-neutral"&gt;
+  &lt;div class="panel-header"&gt;Information&lt;/div&gt;
+  &lt;div class="panel-body"&gt;
+    &lt;p&gt;Här är viktig information...&lt;/p&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
         </code></pre>
 
         <h4>Associated CSS:</h4>
-        <pre><code>
-.panel-secondary {
-  border-color: #6c757d;
+        <pre><code class="language-css">
+.panel-neutral .panel-header {
+  background-color: #1198C2; 
+  color: #FFFFFF; 
 }
-.panel-secondary .panel-header {
-  background-color: #6c757d;
-}
-.panel-secondary .panel-title, .panel-secondary .panel-body {
-  color: #fff;
+.panel-neutral .panel-body {
+  background-color: #F0F9FD; 
+  color: #0B4C63; 
+  border: 1px solid #1198C2;
+  border-top: none;
 }
         </code></pre>
     </div>
 
-    <div class="panel panel-success">
+    <div class="panel panel-negative">
         <div class="panel-header">
-            <h3 class="panel-title">Success Panel</h3>
+            <h3 class="panel-title">Fel upptäckt</h3>
         </div>
         <div class="panel-body">
-            <p>Content related to a successful operation or positive confirmation.</p>
+            <p>Ett problem har upptäckts som kräver din uppmärksamhet. Vänligen kontrollera inställningarna och försök igen.</p>
         </div>
     </div>
 
     <div class="code-example-block">
         <h4>HTML Source:</h4>
-        <pre><code>
-&lt;div class="panel panel-success"&gt;
-  ...
+        <pre><code class="language-html">
+&lt;div class="panel panel-negative"&gt;
+  &lt;div class="panel-header"&gt;Fel upptäckt&lt;/div&gt;
+  &lt;div class="panel-body"&gt;
+    &lt;p&gt;Ett problem har upptäckts...&lt;/p&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
         </code></pre>
 
         <h4>Associated CSS:</h4>
-        <pre><code>
-.panel-success {
-  border-color: #28a745;
+        <pre><code class="language-css">
+.panel-negative .panel-header {
+  background-color: #E82C4C; 
+  color: #FFFFFF; 
 }
-.panel-success .panel-header {
-  background-color: #28a745;
+.panel-negative .panel-body {
+  background-color: #FFF3F4; 
+  color: #A4001A; 
+  border: 1px solid #E82C4C;
+  border-top: none;
 }
         </code></pre>
     </div>
