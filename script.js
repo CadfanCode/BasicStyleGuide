@@ -18,7 +18,8 @@ links.forEach(link => {
     });
 });
 
-document.addEventListener("click", function() {
+document.addEventListener("click", function(e) {
+    if (e.target && e.target.id === "alert-button") {
         alert("This is an alert notification!");
     }
 });
