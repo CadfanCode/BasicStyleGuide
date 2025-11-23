@@ -17,3 +17,9 @@ links.forEach(link => {
         }
     });
 });
+
+function alertDemoFunction() {
+    document.getElementById("alert-btn").addEventListener("click",function() {
+        alert("This is an alert notification!");
+    });
+}
